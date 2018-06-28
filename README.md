@@ -2,13 +2,11 @@
 
 The repository provides matlab code for Stoianov, Pennartz, Lansink, Pezzulo (2018, in press) Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis. *Plos Computational Biology*.
 
-The code implements a novel model-based reinforcement learning algorithm that aligns Bayesian nonparametrics and model-based reinforcement learning (MB-RL) to investigate the computations during spatial navigation of the hippocampus (HC) and the ventral striatum (vStr) – a neuronal circuit that is increasingly recognized to be an appropriate model system to understand goal-directed (spatial) decisions and planning mechanisms in the brain. 
+The code implements a novel model-based reinforcement learning algorithm that aligns Bayesian nonparametrics and model-based reinforcement learning (MB-RL) to investigate the computations during spatial navigation in the hippocampus (HC) and the ventral striatum (vStr) – a neuronal circuit that is increasingly recognized to be an appropriate model system to understand goal-directed (spatial) decisions and planning mechanisms in the brain. The simulations also investigate the benefits of biological forms of look-ahead prediction (forward sweeps) during both learning and control.
 
-The maze used in this simulation is a y-shaped symmetric arena consisting of 3 identical square chambers rotated 120 degrees from each other and connected through a central triangular passage. Each chamber contained three goal locations located along the chamber walls, where reward was (probabilistically) delivered. Each reward location had a cue light above it. The MBRL control circuit receives as input the combined activity of a set of grid-cells and head-direction unit. Thus, the control circuit does not receive an explicit (GPS-like) position signal, but just a signal caring implicit spatial information, which should be decoded in order to allow successful navigation.
+We tested the MB-RL agent in a contextual conditioning task that depends on intact hippocampus and ventral striatal (shell) function and show that the controller solves the task while showing key behavioral and neuronal signatures of the HC-vStr circuit. 
 
-We tested the MB-RL agent in a contextual conditioning task that depends on intact hippocampus and ventral striatal (shell) function and show that it solves the task while showing key behavioral and neuronal signatures of the HC-vStr circuit. 
-
-Our simulations also explore the benefits of biological forms of look-ahead prediction (forward sweeps) during both learning and control. 
+The maze used in the simulations is a discrete version of a y-shaped symmetric arena consisting of 3 identical square chambers rotated 120 degrees from each other and connected through a central triangular passage. Each chamber contained three goal locations located along the chamber walls, where reward was (probabilistically) delivered. Each reward location had a cue light above it. The MB-RL control circuit receives as input the combined activity of a set of grid-cells and head-direction unit. Thus, the controller does not receive explicit GPS-like position signal, but just implicit spatial information, which it needs to decode in order to successfully navigate.
 
 ## Prerequisites
 
