@@ -26,8 +26,8 @@ Get a local copy of this repository (download the zip or clone it with "git clon
 
 ## Authors
 
-* **Ivilin Stoianov** - *Algorithm and code* - [stoianov](https://github.com/stoianov)
-* **Giovanni Pezzulo** - *Ideas*
+* **Ivilin Stoianov** - *ideas, algorithm, and code* - [stoianov](https://github.com/stoianov)
+* **Giovanni Pezzulo** - *ideas*
 
 ## License
 
