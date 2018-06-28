@@ -9,18 +9,14 @@ C =  {
       'MBRL',[20 80 1 8 0.15 2 9],'REW' % Reward-search  sweeps
       'MBRL',[20 80 3 8 0.15 2 9],'A+R' % Action sweeps and Reward-search Sweeps 
      };
-nc=size(C,1);
-nrep=5;
-MH=cell(nrep,nc);
-fname=sprintf('ymaze_MBRL.mat'); 
+nc=size(C,1); nrep=5; MH=cell(nrep,nc);
+fname=sprintf('ymaze_MBRL.mat'); fprintf('TRAIN %d replica ...\n',nrep);
 
-fprintf('TRAIN %d replica ...\n',nrep);
-
-parfor c=1:nc                               
-  rng('shuffle');  model=C{c,1}; params=C{c,2}; info=C{c,3};
-  task = ymaze_init(params);                % Init the navigation environment (ymaze)
-  for r=1:nrep
+for c=1:nc                               
+  model=C{c,1}; params=C{c,2}; info=C{c,3};
+  for r=1:nrep      
     rng('shuffle'); 
+    task = ymaze_init(params);              % Init the navigation environment (ymaze)
     ST = []; M=[]; M.info=info; M.task=task; M.itrial=0; i=0;  % Empty stimulus and model
     while M.itrial<task.ntrials, 
       i=i+1;  
