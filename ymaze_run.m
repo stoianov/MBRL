@@ -1,6 +1,7 @@
 % Bayesian Model-Based Reinforcement Learning controller
-% (C) Ivilin Stoianov, ISTC-CNR, Italy. Please, cite:
-% Stoianov, Pennartz, Lansink, Pezzulo (2018) Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis.  Plos Computational Biology
+% (C) Ivilin Stoianov, ISTC-CNR, Italy. 
+% For more information, refer to the related paper (see bellow). Please, give credit by cyting the paper and this repository.
+% Related *open-access* paper: Stoianov, Pennartz, Lansink, Pezzulo (2018) Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis.  Plos Computational Biology
 
 % Parameters of each condition  [Alfa,Beta,ActionPolicy, maxActSweepLengh, discr.thr, RewardPolicy, maxRewSweepLength]
 C =  {       
@@ -12,7 +13,7 @@ C =  {
 nc=size(C,1); nrep=5; MH=cell(nrep,nc);
 fname=sprintf('ymaze_MBRL.mat'); fprintf('TRAIN %d replica ...\n',nrep);
 
-for c=1:nc                               
+parfor c=1:nc                               % NOTE: use "for" if "parfor" fails.
   model=C{c,1}; params=C{c,2}; info=C{c,3};
   for r=1:nrep      
     rng('shuffle'); 
