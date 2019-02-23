@@ -3,6 +3,7 @@
 This repository provides matlab code for the following *open-access* paper: Stoianov, Pennartz, Lansink, Pezzulo (2018) Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis. *Plos Computational Biology*.
 
 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006316
+
 https://doi.org/10.1371/journal.pcbi.1006316
 
 The code implements a novel model-based reinforcement learning algorithm that aligns Bayesian nonparametrics and model-based reinforcement learning (MB-RL) to investigate the computations during spatial navigation in the hippocampus (HC) and the ventral striatum (vStr) – a neuronal circuit that is increasingly recognized to be an appropriate model system to understand goal-directed (spatial) decisions and planning mechanisms in the brain. The simulations also investigate the benefits of biological forms of look-ahead prediction (forward sweeps) during both learning and control.
