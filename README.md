@@ -1,6 +1,9 @@
 # MBRL - Model-Based Reinforcement Learning for Spatial navigation
 
-This repository provides matlab code for the following *open-access* paper: Stoianov, Pennartz, Lansink, Pezzulo (2018, in press) Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis. *Plos Computational Biology*.
+This repository provides matlab code for the following *open-access* paper: Stoianov, Pennartz, Lansink, Pezzulo (2018) Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis. *Plos Computational Biology*.
+
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1006316
+https://doi.org/10.1371/journal.pcbi.1006316
 
 The code implements a novel model-based reinforcement learning algorithm that aligns Bayesian nonparametrics and model-based reinforcement learning (MB-RL) to investigate the computations during spatial navigation in the hippocampus (HC) and the ventral striatum (vStr) – a neuronal circuit that is increasingly recognized to be an appropriate model system to understand goal-directed (spatial) decisions and planning mechanisms in the brain. The simulations also investigate the benefits of biological forms of look-ahead prediction (forward sweeps) during both learning and control.
 
@@ -31,11 +34,10 @@ Get a local copy of this repository (download the zip or clone it with "git clon
 
 This repository is licensed under the MIT License.
 
-If you use the code for research, please cite the paper: Stoianov, Pennartz, Lansink, & Pezzulo (2018, in press). Model-Based Spatial Navigation in the Hyppocampus-Ventral Striatum Circuit: A Computational Analysis. *Plos Computational Biology*.
+If you use the code for research, please cite the paper:  Stoianov IP, Pennartz CMA, Lansink CS, Pezzulo G (2018) Model-based spatial navigation in the hippocampus-ventral striatum circuit: A computational analysis. PLoS Comput Biol 14(9):e1006316. https://doi.org/10.1371/journal.pcbi.1006316
 
 If you use the code for other purposes, please, give appropriate credit as well.
 
 ## Acknowledgments
 
 * The code extends previous non-parametric reinforcement learning method implemented by the authors, outlined in the following paper: Stoianov, Genovesio, Pezzulo G., (2018) Prefrontal Goal Codes Emerge as Latent States in Probabilistic Value Learning. *J Cogn Neurosci. 28*, 140–157. 
-
